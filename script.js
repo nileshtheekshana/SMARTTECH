@@ -36,11 +36,11 @@ showBanner(currentBanner);
 
 // JavaScript for Dynamic Products
 const products = [
-    { id: 1, title: "Product 1", price: "£50.00", img: "img/product/product1.png" },
-    { id: 2, title: "Product 2", price: "£60.00", img: "img/product/product2.png" },
-    { id: 3, title: "Product 3", price: "£70.00", img: "img/product/product3.png" },
-    { id: 4, title: "Product 4", price: "£60.00", img: "img/product/product4.png" },
-    { id: 5, title: "Product 5", price: "£70.00", img: "img/product/product5.png" },
+    { id: 1, title: "MacBook Air M3 8-core CPU/8GB /256GB/13.6-inch IPS(2y)", price: "Rs.139,500.00", img: "img/product/product1.png" },
+    { id: 2, title: "ASUS ZENBOOK 14 OLED /8GB/512GB/14 OLED(2y)", price: "Rs.239,500.00", img: "img/product/product2.png" },
+    { id: 3, title: "HP 15s-du1114TU Celeron N4020 /4GB/1TB/15.6″/W10/(2y)", price: "Rs.439,500.00", img: "img/product/product3.png" },
+    { id: 4, title: "MacBook Mobile 8GB /256GB(2y)", price: "Rs.89,500.00", img: "img/product/product4.png" },
+    { id: 5, title: "HP 250-G8 CORE i3 11GN/4GB/1TB/15.6″/W10(2y)", price: "Rs.250,500.00", img: "img/product/product5.png" },
     // Add more products here as needed
 ];
 
