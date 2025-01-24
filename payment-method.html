@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Technology - Your Gadget Store</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 240px);
+    padding: 1rem;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.payment-info {
+    background-color: #E8EAF4;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    color: #001887;
+    text-align: center;
+}
+
+.payment-info h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.payment-options h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    color: #001887;
+}
+
+.payment-options ul, 
+.important-notes ol {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    list-style-position: inside;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #E8EAF4;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #F5F7FB;
+}
+
+.btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #001887;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.note {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+    </style>
+</head>
+<body>
+    <!-- Main Header -->
+    <header>
+        <!-- Top Header Section -->
+        <div class="topheader">
+            <div class="shopname">
+                <h1>SMART TECHNOLOGY</h1>
+            </div>
+            <nav class="navigationbar">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="service.html">Service</a>
+                <a href="payment-method.html">Payment Method</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="about-us.html">About Us</a>
+            </nav>
+            <div class="contact">
+                <div class="proicon">
+                    <i class="fa-solid fa-phone" id="iconn"></i>
+                </div>
+                <div>
+                    <p><strong>Call To</strong> +94 77123589</p>
+                    <p>Email: <a href="mailto:info@smarttech.com">info@smarttech.com.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Header Section -->
+        <div class="bottomheader">
+            <div class="selectbox">
+                <button class="selectbtn">All Departments</button>
+                <div class="selectitem">
+                    <a href="#laptops">Laptops</a>
+                    <a href="#phones">Phones</a>
+                    <a href="#accessories">Accessories</a>
+                </div>
+            </div>
+
+            <div class="searchbar">
+                <input type="text" class="searchinput" placeholder="Search products...">
+                <button class="searchbutton" aria-label="Search">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass" id="iconn"></i>
+                </button>
+            </div>
+
+            <div class="icons">
+                <button class="icon" aria-label="Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="icon" aria-label="User Account">
+                    <i class="fa-regular fa-user"></i>
+                </button>
+                <button class="icon" aria-label="Shopping Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+        </div>
+        <br>
+    </header>
+    <br>
+
+    <!-- Main Content -->
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <div class="payment-info">
+                    <h2>PAYMENT METHODS</h2>
+                    <p>Experience secure and convenient payment options at the largest and best online gadget store in Sri Lanka.</p>
+                    
+                    <div class="payment-options">
+                        <h3>In-Store Payment Options:</h3>
+                        <ul>
+                            <li><strong>Cash Payments</strong> (Currency – LKR)</li>
+                            <li><strong>Bank Transfers</strong></li>
+                            <li><strong>Card Payments</strong> – Accepting VISA and Mastercard</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="payment-options">
+                        <h3>Online Payment Options:</h3>
+                        <ul>
+                            <li><strong>Online Bank Transfers</strong></li>
+                            <li><strong>Direct Bank Deposits</strong></li>
+                            <li><strong>Secure Online Payments</strong> through our Website</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="important-notes">
+                        <h3>Important Notes:</h3>
+                        <ol>
+                            <li>
+                                When making <strong>online payments</strong> or <strong>bank deposits</strong>, please provide proof of payment. For bank deposits or transfers, send the receipt to 
+                                <strong>+94 714 576 576</strong> via WhatsApp to verify your payment.
+                            </li>
+                            <li>
+                                Please note that <strong>additional surcharges may apply</strong> when making payments using bank cards. These charges are imposed by the banks.
+                            </li>
+                            <li>
+                                To get bank account details for making bank transfers, contact us at <strong>+94 714 576 576</strong> via phone or WhatsApp.
+                            </li>
+                            <li>
+                                Take advantage of <strong>installment plans</strong> when purchasing items through our website. Check available banks and applicable interest rates for installment services.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <h1>Payment Method</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expiryDate">Expiry Date</label>
+                        <input type="text" id="expiryDate" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123" required>
+                    </div>
+                    <button type="submit" class="btn">Submit Payment</button>
+                </form>
+                <div class="card-icons">
+                    <img src="visa-logo.png" alt="Visa">
+                    <img src="mastercard-logo.png" alt="Mastercard">
+                    <img src="amex-logo.png" alt="American Express">
+                </div>
+                <p class="note">Secure payment powered by your trusted provider.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h3>KEY LINKS</h3>
+            <ul>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#address">Address</a></li>
+                <li><a href="#logout">Logout</a></li>
+                <li><a href="#lost-password">Lost Password</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>MORE ABOUT STORE</h3>
+            <ul>
+                <li><a href="#branches">Multiple Branches</a></li>
+                <li><a href="#franchise">Take Franchise</a></li>
+                <li><a href="#offers">Scheduled Offers</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#more">More Links</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>STORE LOCATIONS</h3>
+            <ul>
+                <li>Kandy</li>
+                <li>Colombo</li>
+                <li>Nuwara Eliya</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>CONTACT DETAILS</h3>
+            <address>
+                No 3845,Passara Road,<br>
+                Badulla<br>
+                Contact: <a href="tel:9477123589">+94 77123589</a><br>
+                Email: <a href="mailto:shopnow@store.com">shopnow@smarttech.com</a>, 
+                <a href="mailto:contact@mart.com">contact@smarttech.com</a>
+            </address>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

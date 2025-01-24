@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Technology - Your Gadget Store</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pre-header with social links -->
+    <div class="prehead">
+        <span>One Stop Shop For Gadgets!!</span>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-square-youtube"></i></a>
+            <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://pinterest.com" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-square-pinterest"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header>
+        <!-- Top Header Section -->
+        <div class="topheader">
+            <div class="shopname">
+                <h1>SMART TECHNOLOGY</h1>
+            </div>
+            <nav class="navigationbar">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="service.html">Service</a>
+                <a href="payment-method.html">Payment Method</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="about-us.html">About Us</a>
+            </nav>
+            <div class="contact">
+                <div class="proicon">
+                    <i class="fa-solid fa-phone" id="iconn"></i>
+                </div>
+                <div>
+                    <p><strong>Call To</strong> +94 77123589</p>
+                    <p>Email: <a href="mailto:info@smarttech.com">info@smarttech.com.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Header Section -->
+        <div class="bottomheader">
+            <div class="selectbox">
+                <button class="selectbtn">All Departments</button>
+                <div class="selectitem">
+                    <a href="#laptops">Laptops</a>
+                    <a href="#phones">Phones</a>
+                    <a href="#accessories">Accessories</a>
+                </div>
+            </div>
+
+            <div class="searchbar">
+                <input type="text" class="searchinput" placeholder="Search products...">
+                <button class="searchbutton" aria-label="Search">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass" id="iconn"></i>
+                </button>
+            </div>
+
+            <div class="icons">
+                <button class="icon" aria-label="Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="icon" aria-label="User Account">
+                    <i class="fa-regular fa-user"></i>
+                </button>
+                <button class="icon" aria-label="Shopping Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+        </div>
+        <br>
+    </header>
+    <br>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Banner Section -->
+        <section class="banner-section">
+            <div class="banner-slider">
+                <div class="banner" id="banner1">
+                    <img src="img/banners/banner1.png" alt="Special Offers">
+                </div>
+                <div class="banner" id="banner2">
+                    <img src="img/banners/banner2.png" alt="New Arrivals">
+                </div>
+                <div class="banner" id="banner3">
+                    <img src="img/banners/banner3.png" alt="Featured Products">
+                </div>
+            </div>
+            <button class="arrow left-arrow" onclick="prevSlide()" aria-label="Previous Slide">&#10094;</button>
+            <button class="arrow right-arrow" onclick="nextSlide()" aria-label="Next Slide">&#10095;</button>
+        </section>
+
+        <!-- Best Laptops Section -->
+        <section class="section best-laptops">
+            <h2>Best Laptops</h2>
+            <div id="product-container" class="product-grid">
+                <!-- Products will be dynamically added here -->
+            </div>
+        </section>
+
+        <!-- Middle Banner -->
+        <section class="middle-banner">
+            <a href="special-offers.html">
+                <img src="img/banners/middlebanner1.jpeg" alt="Special Offer" class="middle-banner-img">
+            </a>
+        </section>
+
+        <section class="best-products">
+
+            <h2 class="section-title">PICK THE BEST PRODUCT</h2>
+            <div class="product-grid" id="best-products-grid">
+
+                <div class="product-card">
+                  <img src="img/product/bp1.png" alt="Canon EOS 80D" class="product-image">
+                  <h3 class="product-title">Vestibulum ante ipsum primis</h3>
+                  <p class="product-price">£56.00</p>
+                  <button class="add-to-cart">Add to Cart</button>
+                  <button class="quick-view" data-id="1">Quick View</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/product/bp2.png" alt="Canon EOS 80D" class="product-image">
+                    <h3 class="product-title">Vestibulum ante ipsum primis</h3>
+                    <p class="product-price">£56.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="quick-view" data-id="1">Quick View</button>
+                  </div>
+                
+                  <div class="product-card">
+                    <img src="img/product/bp3.png" alt="Wireless Speaker" class="product-image">
+                    <h3 class="product-title">Suspendisse vehicula at dui</h3>
+                    <p class="product-price">£56.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="quick-view" data-id="2">Quick View</button>
+                  </div>
+                
+                  <div class="product-card">
+                    <img src="img/product/bp4.png" alt="Smart Speaker" class="product-image">
+                    <h3 class="product-title">Suspendisse gravida lacus varius</h3>
+                    <p class="product-price">£22.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="quick-view" data-id="3">Quick View</button>
+                  </div>
+                
+                  <div class="product-card">
+                    <img src="img/product/bp5.png" alt="Power Bank" class="product-image">
+                    <h3 class="product-title">Pellentesque dignissim sapien semper</h3>
+                    <p class="product-price">£78.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="quick-view" data-id="4">Quick View</button>
+                  </div>
+                
+                  <div class="product-card">
+                    <img src="img/product/bp6.png" alt="TV Box" class="product-image">
+                    <h3 class="product-title">Morbi varius ligula eget ante</h3>
+                    <p class="product-price">£45.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="quick-view" data-id="5">Quick View</button>
+                  </div>
+                
+                  <div class="product-card">
+                    <img src="img/product/bp7.png" alt="Wireless Earbuds" class="product-image">
+                    <h3 class="product-title">Morbi pulvinar augue lorem</h3>
+                    <p class="product-price">£49.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="quick-view" data-id="6">Quick View</button>
+                  </div>
+                
+                  <div class="product-card">
+                    <img src="img/product/bp8.png" alt="Laptop Case" class="product-image">
+                    <h3 class="product-title">Mauris elit magna, aliquet</h3>
+                    <p class="product-price">£50.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="quick-view" data-id="7">Quick View</button>
+                  </div>
+                
+                  <div class="product-card">
+                    <img src="img/product/bp9.png" alt="iMac" class="product-image">
+                    <h3 class="product-title">In fringilla felis non nulla porta rutrum</h3>
+                    <p class="product-price">£65.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="quick-view" data-id="8">Quick View</button>
+                  </div>
+                
+                  <div class="product-card">
+                    <img src="img/product/bp10.png" alt="Bluetooth Speaker" class="product-image">
+                    <h3 class="product-title">Fusce ullamcorper dapibus</h3>
+                    <p class="product-price">£41.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="quick-view" data-id="9">Quick View</button>
+                  </div>
+                <!-- Add more product cards here -->
+              
+              </div>
+        </section>
+
+
+
+
+        <div class="features-section">
+            <div class="feature">
+                <i class="icon fas fa-plane"></i>
+                <h3>Free Shipping</h3>
+                <p>On all orders over</p>
+            </div>
+            <div class="feature">
+                <i class="icon fas fa-heart"></i>
+                <h3>Risk Free</h3>
+                <p>On all orders over</p>
+            </div>
+            <div class="feature">
+                <i class="icon fas fa-dollar-sign"></i>
+                <h3>Easy Payments</h3>
+                <p>On all orders over</p>
+            </div>
+            <div class="feature">
+                <i class="icon fas fa-user"></i>
+                <h3>Full Support</h3>
+                <p>On all orders over</p>
+            </div>
+            <div class="feature">
+                <i class="icon fas fa-cogs"></i>
+                <h3>Best Offers</h3>
+                <p>On all orders over</p>
+            </div>
+            <div class="feature">
+                <i class="icon fas fa-check"></i>
+                <h3>Stock In</h3>
+                <p>On all orders over</p>
+            </div>
+        </div>
+          <br>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <h3>KEY LINKS</h3>
+            <ul>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#address">Address</a></li>
+                <li><a href="#logout">Logout</a></li>
+                <li><a href="#lost-password">Lost Password</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>MORE ABOUT STORE</h3>
+            <ul>
+                <li><a href="#branches">Multiple Branches</a></li>
+                <li><a href="#franchise">Take Franchise</a></li>
+                <li><a href="#offers">Scheduled Offers</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#more">More Links</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>STORE LOCATIONS</h3>
+            <ul>
+                <li>Kandy</li>
+                <li>Colombo</li>
+                <li>Nuwara Eliya</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>CONTACT DETAILS</h3>
+            <address>
+                No 3845,Passara Road,<br>
+                Badulla<br>
+                Contact: <a href="tel:9477123589">+94 77123589</a><br>
+                Email: <a href="mailto:shopnow@store.com">shopnow@smarttech.com</a>, 
+                <a href="mailto:contact@mart.com">contact@smarttech.com</a>
+            </address>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

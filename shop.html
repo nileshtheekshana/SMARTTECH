@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Technology - Your Gadget Store</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pre-header with social links -->
+    <div class="prehead">
+        <span>One Stop Shop For Gadgets!!</span>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-square-youtube"></i></a>
+            <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://pinterest.com" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-square-pinterest"></i></a>
+        </div>
+    </div>
+	
+	<style>
+	
+	/*service page end*/
+		.shop-banner {
+			text-align: left;
+			padding: 20px 0;
+		}
+
+		/* Filters styles */
+		.shopfilters {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 20px;
+		}
+
+		.shopfilter-section {
+			margin-right: 20px;
+		}
+
+		.shopfilter-section label {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		.shopfilter-section select {
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+		}
+
+		.shopfilter-section {
+			float: right;
+			background-color: #f0f0f0;
+			padding: 20px;
+		}
+
+		.shopfilter-section label {
+		  display: block;
+		  margin-bottom: 5px;
+		}
+
+		.shopinput[type="range"] {
+		  width: 100%;
+		  appearance: none;
+		  background-color: #ddd;
+		  height: 5px;
+		  border-radius: 5px;
+		}
+
+		.shopinput[type="range"]::-webkit-slider-thumb {
+		  -webkit-appearance: none;
+		  appearance: none;
+		  width: 15px;
+		  height: 15px;
+		  border-radius: 50%;
+		  background-color: #333;
+		  cursor: pointer;
+		}
+
+		#price-range-value {
+		  margin-top: 5px;
+		}
+
+		/* Product grid styles */
+		.shopproduct-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			grid-gap: 20px;
+		}
+
+		.shopproduct {
+			border: 1px solid #ccc;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.shopproduct img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		/* Button styles */
+		.shopbutton {
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+
+		.shop-banner {
+			text-align: left;
+			padding: 20px 0;
+		}
+
+		/* Filters styles */
+		.shopfilters {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 20px;
+		}
+
+		.shopfilter-section {
+			margin-right: 20px;
+		}
+
+		.shopfilter-section label {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		.shopfilter-section select {
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+		}
+
+		.shopfilter-section {
+			float: right;
+			background-color: #f0f0f0;
+			padding: 20px;
+		}
+
+		.shopfilter-section label {
+		  display: block;
+		  margin-bottom: 5px;
+		}
+
+		.shopinput[type="range"] {
+		  width: 100%;
+		  appearance: none;
+		  background-color: #ddd;
+		  height: 5px;
+		  border-radius: 5px;
+		}
+
+		.shopinput[type="range"]::-webkit-slider-thumb {
+		  -webkit-appearance: none;
+		  appearance: none;
+		  width: 15px;
+		  height: 15px;
+		  border-radius: 50%;
+		  background-color: #333;
+		  cursor: pointer;
+		}
+
+		#price-range-value {
+		  margin-top: 5px;
+		}
+
+		/* Product grid styles */
+		.shopproduct-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			grid-gap: 20px;
+		}
+
+		.shopproduct {
+			border: 1px solid #ccc;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.shopproduct img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		/* Button styles */
+		.shopbutton {
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+
+
+		/*new */
+		.shopproduct-list {
+		   float: right;
+		   background-color: #f0f0f0;
+		   padding: 20px;
+		  }
+		  
+		.shopproduct {
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin-bottom: 20px;
+		  }
+		  
+		.shopproduct img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 10px;
+		  }
+		  
+		.shopproduct h3 {
+			margin-bottom: 5px;
+		  }
+		  
+		.shopproduct p {
+			color: #888;
+		  }
+		  
+		.shopbuttons {
+			display: flex;
+			justify-content: space-between;
+		  }
+	
+	</style>
+
+    <!-- Main Header -->
+    <header>
+        <!-- Top Header Section -->
+        <div class="topheader">
+            <div class="shopname">
+                <h1>SMART TECHNOLOGY</h1>
+            </div>
+            <nav class="navigationbar">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="service.html">Service</a>
+                <a href="payment-method.html">Payment Method</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="about-us.html">About Us</a>
+            </nav>
+            <div class="contact">
+                <div class="proicon">
+                    <i class="fa-solid fa-phone" id="iconn"></i>
+                </div>
+                <div>
+                    <p><strong>Call To</strong> +94 77123589</p>
+                    <p>Email: <a href="mailto:info@smarttech.com">info@smarttech.com.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Header Section -->
+        <div class="bottomheader">
+            <div class="selectbox">
+                <button class="selectbtn">All Departments</button>
+                <div class="selectitem">
+                    <a href="#laptops">Laptops</a>
+                    <a href="#phones">Phones</a>
+                    <a href="#accessories">Accessories</a>
+                </div>
+            </div>
+
+            <div class="searchbar">
+                <input type="text" class="searchinput" placeholder="Search products...">
+                <button class="searchbutton" aria-label="Search">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass" id="iconn"></i>
+                </button>
+            </div>
+
+            <div class="icons">
+                <button class="icon" aria-label="Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="icon" aria-label="User Account">
+                    <i class="fa-regular fa-user"></i>
+                </button>
+                <button class="icon" aria-label="Shopping Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+        </div>
+        <br>
+    </header>
+    <br>
+
+    <!-- Main Content -->
+    <main>
+        <section class="shop-banner">
+            <h1>Shop</h1>
+            <p>Showing 1-15 of 25 results</p>
+        </section>
+
+        <section class="shopfilters">
+            <div class="shopfilter-section">
+                <label for="sorting">Default sorting</label>
+                <select id="sorting">
+                    <option value="default">Default sorting</option>
+                    <option value="low-to-high">Price: Low to High</option>
+                    <option value="high-to-low">Price: High to Low</option>
+                </select>
+            </div>
+            <div class="shopfilter-section">
+                <label for="price-range">Filter by price</label>
+                <input type="range" id="price-range" min="0" max="100" value="0">
+                <span id="price-range-value"></span>
+                <button class="filter-button">Filter</button>
+              </div>
+        </section>
+
+
+
+          <!--new -->
+          <div class="shopproduct-list">
+            <h2>Products</h2>
+            <div class="shopproduct1">
+              <img src="product1.jpg" alt="Product 1">
+              <h3>Suspendisse gravida lacus</h3>
+              <p>£33.00 £22.00</p>
+            </div>
+          
+            <div class="shopproduct1">
+              <img src="product2.jpg" alt="Product 2">
+              <h3>Aliquam erat volutpat</h3>
+              <p>£50.00</p>
+            </div>
+          
+            <div class="shopproduct1">
+              <img src="product3.jpg" alt="Product 3">
+              <h3>In fringilla felis non nulla...</h3>
+              <p>£78.00 £65.00</p>
+            </div>
+          
+            <div class="shopproduct1">
+              <img src="product4.jpg" alt="Product 4">
+              <h3>Suspendisse volutpat massa</h3>
+              <p>£39.00</p>
+            </div>
+          
+            <div class="shopproduct1">
+              <img src="product5.jpg" alt="Product 5">
+              <h3>Cras viverra rhoncus</h3>
+              <p>£84.00</p>
+            </div>
+          </div>
+
+
+
+
+
+        <section class="shopproduct-grid">
+            <div class="shopproduct">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Aenean non pellentesque mauris</h3>
+                <p>€59.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="shopproduct">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Aliquam erat volutpat</h3>
+                <p>€50.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="shopproduct">
+                <img src="product3.jpg" alt="Product 3">
+                <h3>Aliquam id quam elementum arcu</h3>
+                <p>€49.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="shopproduct">
+                <img src="product4.jpg" alt="Product 4">
+                <h3>Cras viverra rhoncus</h3>
+                <p>€54.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="shopproduct">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Aenean non pellentesque mauris</h3>
+                <p>€59.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="shopproduct">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Aliquam erat volutpat</h3>
+                <p>€50.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="shopproduct">
+                <img src="product3.jpg" alt="Product 3">
+                <h3>Aliquam id quam elementum arcu</h3>
+                <p>€49.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="shopproduct">
+                <img src="product4.jpg" alt="Product 4">
+                <h3>Cras viverra rhoncus</h3>
+                <p>€54.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="shopproduct">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Aenean non pellentesque mauris</h3>
+                <p>€59.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="shopproduct">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Aliquam erat volutpat</h3>
+                <p>€50.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="shopproduct">
+                <img src="product3.jpg" alt="Product 3">
+                <h3>Aliquam id quam elementum arcu</h3>
+                <p>€49.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="shopproduct">
+                <img src="product4.jpg" alt="Product 4">
+                <h3>Cras viverra rhoncus</h3>
+                <p>€54.00</p>
+                <button>Buy Now</button>
+            </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <h3>KEY LINKS</h3>
+            <ul>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#address">Address</a></li>
+                <li><a href="#logout">Logout</a></li>
+                <li><a href="#lost-password">Lost Password</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>MORE ABOUT STORE</h3>
+            <ul>
+                <li><a href="#branches">Multiple Branches</a></li>
+                <li><a href="#franchise">Take Franchise</a></li>
+                <li><a href="#offers">Scheduled Offers</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#more">More Links</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>STORE LOCATIONS</h3>
+            <ul>
+                <li>Kandy</li>
+                <li>Colombo</li>
+                <li>Nuwara Eliya</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>CONTACT DETAILS</h3>
+            <address>
+                No 3845,Passara Road,<br>
+                Badulla<br>
+                Contact: <a href="tel:9477123589">+94 77123589</a><br>
+                Email: <a href="mailto:shopnow@store.com">shopnow@smarttech.com</a>, 
+                <a href="mailto:contact@mart.com">contact@smarttech.com</a>
+            </address>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
