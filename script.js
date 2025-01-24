@@ -1,4 +1,3 @@
-// JavaScript for Banner Slider
 let currentBanner = 0;
 const banners = document.querySelectorAll('.banner');
 let slideInterval = setInterval(nextSlide, 5000);
@@ -34,14 +33,12 @@ banners.forEach(banner => {
 
 showBanner(currentBanner);
 
-// JavaScript for Dynamic Products
 const products = [
     { id: 1, title: "MacBook Air M3 8-core CPU/8GB /256GB/13.6-inch IPS(2y)", price: "Rs.139,500.00", img: "img/product/product1.png" },
     { id: 2, title: "ASUS ZENBOOK 14 OLED /8GB/512GB/14 OLED(2y)", price: "Rs.239,500.00", img: "img/product/product2.png" },
     { id: 3, title: "HP 15s-du1114TU Celeron N4020 /4GB/1TB/15.6″/W10/(2y)", price: "Rs.439,500.00", img: "img/product/product3.png" },
     { id: 4, title: "MacBook Mobile 8GB /256GB(2y)", price: "Rs.89,500.00", img: "img/product/product4.png" },
     { id: 5, title: "HP 250-G8 CORE i3 11GN/4GB/1TB/15.6″/W10(2y)", price: "Rs.250,500.00", img: "img/product/product5.png" },
-    // Add more products here as needed
 ];
 
 const productContainer = document.getElementById('product-container');
@@ -73,19 +70,15 @@ products.forEach(product => {
     productContainer.appendChild(productDiv);
 });
 
-// JavaScript for Quick View Popup
 document.addEventListener('DOMContentLoaded', function () {
     const quickViewButtons = document.querySelectorAll('.quick-view');
     quickViewButtons.forEach(button => {
         button.addEventListener('click', function (event) {
             event.preventDefault();
 
-            // Create a popup container
             const popup = document.createElement('div');
             popup.className = 'popup-overlay';
-
-            // Add content to the popup
-            const productId = button.getAttribute('data-id'); // Get the product ID
+            const productId = button.getAttribute('data-id'); 
             popup.innerHTML = `
                 <div class="popup-content">
                     <span class="close-btn">&times;</span>
@@ -94,16 +87,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
             `;
 
-            // Append popup to the body
             document.body.appendChild(popup);
 
-            // Close popup when "X" is clicked
             const closeBtn = popup.querySelector('.close-btn');
             closeBtn.addEventListener('click', function () {
                 document.body.removeChild(popup);
             });
 
-            // Close popup when clicking outside the content
             popup.addEventListener('click', function (e) {
                 if (e.target === popup) {
                     document.body.removeChild(popup);
